@@ -1,0 +1,9 @@
+services:
+  flask:
+    build: .
+    image: hiring_evaluation
+    container_name: hiring_evaluation
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
